@@ -1,7 +1,7 @@
 // Aplicacion que es un bot en Telegram y a la vez en Twitter, con la cotizacion de bitcoin
 // en tweeter es @btcticka y en Telegram @TickerBTC_bot
 // ticker bot ROJO
-////////////////////// Webhokk del BOT ROJO https://toko.parseapp.com/rojo
+////////////////////// Webhokk del BOT ROJO https://___.parseapp.com/___
 
 var express = require('express');
 var app = express();
@@ -19,7 +19,7 @@ var dolares = new Dolares();
 var BotRojo = Parse.Object.extend("BotRojo");
 var botrojo = new BotRojo();
 
-TOKEN = '114843520:AAFXYbAkqk3wq7Eq6i0FALe1LrojpqXVuNA'
+TOKEN = '114843520:-----------------------'
 
 
 //app.use(express.bodyParser());
@@ -232,7 +232,7 @@ Parse.Cloud.useMasterKey();
                         ///////////////////////////////////////////////////////////////////
                         Parse.Cloud.run('Twitter', {
                         status : mensaje,
-                        oauth_token :'3339344283-FWJq0UR758qYctdgCzVVS6cAH2Xr92inacoESmm',
+                        oauth_token :'3339344283-',
                         tokenSecret : 'RnP4x2yLfz7SKTVxSWk9XPKnUVAE56iqenBxmCu6tPLmp',
                         oauth_consumer_key : 'iAtYJ4HpUVfIUoNnif1DA',
                         consumerSecret : '172fOpzuZoYzNYaU3mMYvE8m8MEyLbztOdbrUolU'  ,
@@ -281,7 +281,7 @@ Parse.Cloud.useMasterKey();
                       ///////////////////////////////////////////////////////////////////
                         Parse.Cloud.run('Twitter', {
                             status : mensaje,
-                            oauth_token :'3339344283-FWJq0UR758qYctdgCzVVS6cAH2Xr92inacoESmm',
+                            oauth_token :'3339344283-',
                             tokenSecret : 'RnP4x2yLfz7SKTVxSWk9XPKnUVAE56iqenBxmCu6tPLmp',
                             oauth_consumer_key : 'iAtYJ4HpUVfIUoNnif1DA',
                             consumerSecret : '172fOpzuZoYzNYaU3mMYvE8m8MEyLbztOdbrUolU'  ,
