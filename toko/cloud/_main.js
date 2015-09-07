@@ -11,10 +11,10 @@ var dolares = new Dolares();
 var BotRojo = Parse.Object.extend("BotRojo");
 var botrojo = new BotRojo();
 
-TOKEN = '114843520:AAFXYbAkqk3wq7Eq6i0FALe1LrojpqXVuNA' 
+TOKEN = '114843520:' 
 
  // ticker bot ROJO
-////////////////////// Webhokk del BOT ROJO https://tiki.parseapp.com/rojo
+////////////////////// Webhokk del BOT ROJO https://tooooo.parseapp.com/rooooo
 //app.use(express.bodyParser());
 app.use(express.urlencoded());
 app.use(express.json());  
