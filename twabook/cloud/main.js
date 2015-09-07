@@ -6,7 +6,7 @@ var oauth = require('cloud/oauth.js');
 var sha = require('cloud/sha1.js');
 
 ////////////////////////////////////////////////////////////////
-oauth_token =  '3231928873-yfQhuU8nXFdMN6geBOQiAjAmnGodZbjjAM9lqQb';
+oauth_token =  '3231928873-';
 tokenSecret = 'w6JYcQobzV7AEKtMvUkQqrWPwwKjDuWxvFVJ6Z7L2jI7q';
 oauth_consumer_key = 'iAtYJ4HpUVfIUoNnif1DA';
 consumerSecret = '172fOpzuZoYzNYaU3mMYvE8m8MEyLbztOdbrUolU';
@@ -185,7 +185,7 @@ Parse.Cloud.define("watership", function(request, status){
 Parse.Cloud.run('Twitter', {
 
 status : results.get('title'),
-oauth_token :'3231928873-yfQhuU8nXFdMN6geBOQiAjAmnGodZbjjAM9lqQb',
+oauth_token :'3231928873-',
 tokenSecret : 'w6JYcQobzV7AEKtMvUkQqrWPwwKjDuWxvFVJ6Z7L2jI7q',
 oauth_consumer_key : 'iAtYJ4HpUVfIUoNnif1DA',
 consumerSecret : '172fOpzuZoYzNYaU3mMYvE8m8MEyLbztOdbrUolU',
@@ -231,7 +231,7 @@ Parse.Cloud.define("cosmos", function(request, status){
 Parse.Cloud.run('Twitter', {
 
 status : results.get('title'),
-oauth_token :'3287388914-OXSdNBp3Vy0MDo9U9lfJUhlHnNicmAehbcO44Fm',
+oauth_token :'3287388914-',
 tokenSecret : 'SEGLFBYPGmRRRG5gSRXcZlt01sx9BgrtQ9RwPQdemvbEx',
 oauth_consumer_key : 'iAtYJ4HpUVfIUoNnif1DA',
 consumerSecret : '172fOpzuZoYzNYaU3mMYvE8m8MEyLbztOdbrUolU',
