@@ -14,14 +14,14 @@ tweets = {} ;
 
 
 
-oauth_token =  '3231928873-yfQhuU8nXFdMN6geBOQiAjAmnGodZbjjAM9lqQb';
+oauth_token =  '3231928873-';
 tokenSecret = 'w6JYcQobzV7AEKtMvUkQqrWPwwKjDuWxvFVJ6Z7L2jI7q';
 oauth_consumer_key = 'iAtYJ4HpUVfIUoNnif1DA';
 consumerSecret = '172fOpzuZoYzNYaU3mMYvE8m8MEyLbztOdbrUolU';
 screen_name = "allan_bunny" ;
 
 //      _bigwig_
-//oauth_token = '42634315-RtEYW9WlSuE5x2S2O3HGZCeUbB7cA6OCJjcpvnnMe';
+//oauth_token = '42634315-';
 //tokenSecret = 'HkdcXaOgUWB8lGyS5NMdpSuJnSDFThAyqFYwrWMyhs2Tw';
 //oauth_consumer_key = '3rJOl1ODzm9yZy63FACdg';
 //consumerSecret = '5jPoQ5kQvMJFDYRNE8bQ4rHuds4xJqhvgNJM4awaE8';
@@ -280,7 +280,7 @@ Parse.Cloud.useMasterKey();
 
 Parse.Cloud.run('UserTimeline', { max_id : max_id ,
 
-oauth_token :'3231928873-yfQhuU8nXFdMN6geBOQiAjAmnGodZbjjAM9lqQb',
+oauth_token :'3231928873-',
 tokenSecret : 'w6JYcQobzV7AEKtMvUkQqrWPwwKjDuWxvFVJ6Z7L2jI7q',
 oauth_consumer_key : 'iAtYJ4HpUVfIUoNnif1DA',
 consumerSecret : '172fOpzuZoYzNYaU3mMYvE8m8MEyLbztOdbrUolU',
@@ -335,7 +335,7 @@ for(var i in tweets)
 
                                                 Parse.Cloud.run('UserTimeline', { max_id : max_id ,
 
-                                                oauth_token :'3231928873-yfQhuU8nXFdMN6geBOQiAjAmnGodZbjjAM9lqQb',
+                                                oauth_token :'3231928873-',
                                                 tokenSecret : 'w6JYcQobzV7AEKtMvUkQqrWPwwKjDuWxvFVJ6Z7L2jI7q',
                                                 oauth_consumer_key : 'iAtYJ4HpUVfIUoNnif1DA',
                                                 consumerSecret : '172fOpzuZoYzNYaU3mMYvE8m8MEyLbztOdbrUolU',
