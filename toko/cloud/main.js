@@ -1,7 +1,7 @@
 // Aplicacion que es un bot en Telegram y a la vez en Twitter, con la cotizacion de bitcoin
 // en tweeter es @btcticka y en Telegram @TickerBTC_bot
 // ticker bot ROJO
-////////////////////// Webhokk del BOT ROJO https://......parseapp.com/....
+////////////////////// Webhokk del BOT ROJO https://toko.parseapp.com/rojo
 
 var express = require('express');
 var app = express();
@@ -19,7 +19,7 @@ var dolares = new Dolares();
 var BotRojo = Parse.Object.extend("BotRojo");
 var botrojo = new BotRojo();
 
-TOKEN = '114843520:........................................'
+TOKEN = '114843520:AAFXYbAkqk3wq7Eq6i0FALe1LrojpqXVuNA'
 
 
 //app.use(express.bodyParser());

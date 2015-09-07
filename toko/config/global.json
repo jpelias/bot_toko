@@ -1,0 +1,14 @@
+{
+  "global": {
+    "parseVersion": "1.5.0"
+  },
+  "applications": {
+    "_default": {
+      "link": "toko"
+    },
+    "toko": {
+      "applicationId": "oDChUYlJ8wGBIASxraqTAFJB82q3QAzcQLQ9atW9",
+      "masterKey": "Vi6derzeTbbSFOmvnnX1jFD3eY99YqQaXMY6iR5W"
+    }
+  }
+}

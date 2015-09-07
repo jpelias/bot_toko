@@ -1,0 +1,59 @@
+! 16/7/2015 13:04:35 https://twitter.com/
+twitter.com###data-promoted="true"
+
+! 16/7/2015 15:03:11 http://www.seriesbang.net/mr-robot-1x04.html
+www.seriesbang.net###sharefb
+
+! 16/7/2015 15:03:37 http://www.seriesbang.net/mr-robot-1x04.html
+www.seriesbang.net###twitter-widget-2
+
+! 20/7/2015 12:59:40 http://www.linux-party.com/index.php/35-linux/8465-montar-un-directorio-remoto-via-nfs-en-linux-por-editar
+www.linux-party.com###fblikebg
+
+! 20/7/2015 14:45:15 http://www.btsdl.cc/
+www.btsdl.cc##body > div:nth-of-type(4)
+
+! 21/7/2015 20:22:31 http://www.estrenosdtl.com/el-viaje-mas-largo-descargar-torrent-11662.html
+www.estrenosdtl.com###f_find_bar
+
+! 26/7/2015 12:02:11 hotmirrorpics.com
+||hotmirrorpics.com/wp-content/plugins$first-party
+
+! 2/8/2015 21:14:30 http://www.redtube.com/1136409
+www.redtube.com###contentHolder > .pageVideos.content > .video-wrap > .bvq
+
+! 3/8/2015 15:15:23 https://mail.google.com/mail/u/0/#inbox/14ee4ec98de262d0
+mail.google.com###\:2 > .nH > .nH:nth-of-type(2) > .id.g.nH > .iY.nH.Bs > tr > .y3.Bu > .adC.nH > .nH > .anT.nH
+
+! 3/8/2015 15:15:35 https://mail.google.com/mail/u/0/#inbox/14ee4ec98de262d0
+mail.google.com###\:2 > .nH > .nH:nth-of-type(2) > .id.g.nH > .iY.nH.Bs > tr > .y3.Bu > .adC.nH > .nH > .nH:nth-of-type(2) > .u5
+
+! 3/8/2015 15:15:45 https://mail.google.com/mail/u/0/#inbox/14ee4ec98de262d0
+mail.google.com###\:2 > .nH > .nH:nth-of-type(2) > .id.g.nH > .iY.nH.Bs > tr > .y3.Bu
+
+! 3/8/2015 15:16:31 https://mail.google.com/mail/u/0/#inbox/14ee4ec98de262d0
+mail.google.com###\:2 > .nH > .nH:nth-of-type(1) > .id.g.nH > .iY.nH.Bs > tr > .y3.Bu > .adC.nH > .nH > .nH:nth-of-type(2) > .u5
+
+! 3/8/2015 15:16:39 https://mail.google.com/mail/u/0/#inbox/14ee4ec98de262d0
+mail.google.com###\:2 > .nH > .nH:nth-of-type(1) > .id.g.nH > .iY.nH.Bs > tr > .y3.Bu
+
+! 3/8/2015 19:31:45 http://www.peliculasflv.co/2015/08/felices-140-2015-online.html
+www.peliculasflv.co###ad1
+
+
+! 8/8/2015 19:16:38 http://www.seriesflv.net/serie/house-of-cards.html
+www.seriesflv.net###fans > .over.bg6
+
+! 9/8/2015 15:59:42 http://www.seriales.us/capitulo/house-of-cards/3x09/
+www.seriales.us###mmm > table > tbody > tr > td:nth-of-type(1) > .clm:nth-of-type(2) > .container > .tab_container > .adspl
+
+! 12/8/2015 13:03:11 http://developer.konacloud.io/app#!/analytics
+developer.konacloud.io###uvTabLabel[href="javascript:return false;"]
+
+! 12/8/2015 20:03:45 http://developer.konacloud.io/app#!/logs
+developer.konacloud.io###uvTabLabel[href="javascript:return false;"]
+
+
+###cookieChoiceInfo
+##robapagines
+###ventana-flotante

@@ -1,6 +1,5 @@
 
-
-
+// Parse.initialize("VfzfvOBzbgOaubo1xDicIW8ndyrfox2p8kRVYf5l", "8QShxWtUxvcKK5k07Dj0huDyMEib89k7M6q2PbH2");
 var express = require('express');
 var app = express();
 
@@ -15,14 +14,14 @@ tweets = {} ;
 
 
 
-oauth_token =  '3231928873-';
+oauth_token =  '3231928873-yfQhuU8nXFdMN6geBOQiAjAmnGodZbjjAM9lqQb';
 tokenSecret = 'w6JYcQobzV7AEKtMvUkQqrWPwwKjDuWxvFVJ6Z7L2jI7q';
 oauth_consumer_key = 'iAtYJ4HpUVfIUoNnif1DA';
 consumerSecret = '172fOpzuZoYzNYaU3mMYvE8m8MEyLbztOdbrUolU';
 screen_name = "allan_bunny" ;
 
 //      _bigwig_
-//oauth_token = '42634315-';
+//oauth_token = '42634315-RtEYW9WlSuE5x2S2O3HGZCeUbB7cA6OCJjcpvnnMe';
 //tokenSecret = 'HkdcXaOgUWB8lGyS5NMdpSuJnSDFThAyqFYwrWMyhs2Tw';
 //oauth_consumer_key = '3rJOl1ODzm9yZy63FACdg';
 //consumerSecret = '5jPoQ5kQvMJFDYRNE8bQ4rHuds4xJqhvgNJM4awaE8';
@@ -53,12 +52,6 @@ Parse.Cloud.define("Twitter", function(request, response) {
 
     var postSummary = request.params.status;
     var status = oauth.percentEncode(postSummary);
-
-    var oauth_token =  request.params.oauth_token;
-    var tokenSecret = request.params.tokenSecret;
-    var oauth_consumer_key = request.params.oauth_consumer_key;
-    var consumerSecret = request.params.consumerSecret;
-    var screen_name = request.params.screen_name;
 
 
     var nonce = oauth.nonce(32);
@@ -119,12 +112,7 @@ Parse.Cloud.define("Twitter", function(request, response) {
 
   Parse.Cloud.define("Delete", function(request, response) {
     var urlLink = 'https://api.twitter.com/1.1/statuses/destroy/'+request.params.id+'.json';
-    
-    var oauth_token =  request.params.oauth_token;
-    var tokenSecret = request.params.tokenSecret;
-    var oauth_consumer_key = request.params.oauth_consumer_key;
-    var consumerSecret = request.params.consumerSecret;
-    var screen_name = request.params.screen_name;
+
 
     var nonce = oauth.nonce(32);
     var ts = Math.floor(new Date().getTime() / 1000);
@@ -184,12 +172,6 @@ Parse.Cloud.define("UserTimeline", function(request, response) {
 max_id = request.params.max_id;
 //console.log('max_id1');
 //console.log(max_id);
-
-    var oauth_token =  request.params.oauth_token;
-    var tokenSecret = request.params.tokenSecret;
-    var oauth_consumer_key = request.params.oauth_consumer_key;
-    var consumerSecret = request.params.consumerSecret;
-    var screen_name = request.params.screen_name;
 
     var urlLink = 'https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name='+screen_name+'&count=200&trim_user=t';
 
@@ -260,13 +242,6 @@ function parseTwitterDate(tdate) {
     diff = Math.round(diff / 86400)
 return diff
     }
-//////////////////////////////////////////////////////////////////////////
-function pad(n, width, z) {
-  z = z || '0';
-  n = n + '';
-  return n.length >= width ? n : new Array(width - n.length + 1).join(z) + n;
-}
-
 ////////////////////////////////////
 function pausecomp(ms) {
 ms += new Date().getTime();
@@ -279,23 +254,15 @@ while (new Date() < ms){}
 Parse.Cloud.job("Listador", function(request, response) {
 Parse.Cloud.useMasterKey();
 
-Parse.Cloud.run('UserTimeline', { max_id : max_id ,
-
-oauth_token :'3231928873-',
-tokenSecret : 'w6JYcQobzV7AEKtMvUkQqrWPwwKjDuWxvFVJ6Z7L2jI7q',
-oauth_consumer_key : 'iAtYJ4HpUVfIUoNnif1DA',
-consumerSecret : '172fOpzuZoYzNYaU3mMYvE8m8MEyLbztOdbrUolU',
-screen_name : "allan_bunny"
-
-}, {
+Parse.Cloud.run('UserTimeline', { max_id : max_id }, {
 
 success: function (result) {
 
 tweets = result;
 max_id = tweets[tweets.length-1].id_str ;
-console.log('1max');
+console.log('max');
 console.log(max_id);
-console.log(tweets.length);
+console.log(tweets[0].id_str);
 //console.log(tweets[0]);
 for(var i in tweets)
 
@@ -304,101 +271,13 @@ for(var i in tweets)
       id_str = (tweets[i].id_str) ;
       tdate = tweets[i].created_at ;
 
-      var urlLink = 'https://script.google.com/macros/s/AKfycbw1REu.............../exec';
-      //var urlLink = 'https://.runscope.net';
-      
-      Parse.Cloud.httpRequest({
-      method: 'POST',
-      url: urlLink,
-      headers: {'Content-Type': 'application/json'},
-      body: {
-
-          id_str : id_str , tdate : tdate
-
-          },
-    success: function(httpResponse) {
-      pausecomp(500);
-        //          console.log(httpResponse.text);
-        //          response.success(httpResponse.text);
-            },
-    error: function(httpResponse) {
-            
-    }
-});
-
-
-
-
+      //console.log(tdate);
       //console.log(tdate);
       //console.log(parseTwitterDate(tdate));
 
 }// next
 
-                                                Parse.Cloud.run('UserTimeline', { max_id : max_id ,
 
-                                                oauth_token :'3231928873-',
-                                                tokenSecret : 'w6JYcQobzV7AEKtMvUkQqrWPwwKjDuWxvFVJ6Z7L2jI7q',
-                                                oauth_consumer_key : 'iAtYJ4HpUVfIUoNnif1DA',
-                                                consumerSecret : '172fOpzuZoYzNYaU3mMYvE8m8MEyLbztOdbrUolU',
-                                                screen_name : "allan_bunny"}, {
-
-                                                success: function (result) {
-
-                                                tweets = result;
-                                                max_id = tweets[tweets.length-1].id_str ;
-                                                console.log('2max');
-                                                console.log(max_id);
-                                                console.log(tweets.length);
-                                                //console.log(tweets[0]);
-
-                                                for(var i in tweets)
-
-
-                                                {
-                                                id_str = (tweets[i].id_str) ;
-                                                tdate = tweets[i].created_at ;
-
-      var urlLink = 'https://script.google.com/macros/s/AKfycbw1REumB9SVf6Bdbe.......................ynj_eX1L/exec';
-      //var urlLink = 'https://.runscope.net';
-      
-      Parse.Cloud.httpRequest({
-      method: 'POST',
-      url: urlLink,
-      headers: {'Content-Type': 'application/json'},
-      body: {
-
-          id_str : id_str , tdate : tdate
-
-          },
-    success: function(httpResponse) {
-      pausecomp(500);
-        //          console.log(httpResponse.text);
-        //          response.success(httpResponse.text);
-            },
-    error: function(httpResponse) {
-        
-        
-    }// next
-
-
-
-
-  });
-
-
-                                                //console.log(tdate);
-                                                //console.log(tdate);
-                                                //console.log(parseTwitterDate(tdate));
-
-                                                }// next
-
-                                                },
-                                                error: function (error) {
-                                                console.log('error');
-                                                console.log(error);
-
-                                                }
-                                                });
 
   },
   error: function (error) {
@@ -408,8 +287,8 @@ for(var i in tweets)
   }
 });
 
+});
 
+////////////////////////////////////
 
-
-});// Fin job
-
+////////////////////////////////////
